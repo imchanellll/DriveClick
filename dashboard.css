@@ -1,0 +1,199 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links a,
+.profile-links a {
+  color: #fff;
+  margin: 0 0.75rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.profile-links a:hover {
+  color: #38bdf8;
+}
+
+.shop-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#showcase {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* Adjust height as needed */
+  color: #0f172a;
+}
+
+.background-car {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes image fill container proportionally */
+  z-index: 0;
+  opacity: 0.5; /* Optional: adjust for contrast with text */
+}
+
+.catchy-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.catchy-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.catchy-text h3 {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  position: relative;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-btn {
+  display: none;
+}
+
+.carousel-item {
+  min-width: 60%;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.vehicle-image {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.vehicle-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.vehicle-details p {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #0f172a;
+}
+
+.reserve-btn {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #1e293b;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e2e8f0;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+.carousel-btn.prev {
+  left: 1rem;
+}
+
+.carousel-btn.next {
+  right: 1rem;
+}
+
+.footer {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  margin: 0 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+}
