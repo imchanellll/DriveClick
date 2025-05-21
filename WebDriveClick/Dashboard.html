@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Rental Showcase</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="shop-name">DriveClick</div>
+    <div class="nav-links">
+      <a href="WebDriveClick.html">Home</a>
+      <a href="#">Rent a Car</a>
+      <a href="#">FAQs</a>
+    </div>
+    <div class="profile-links">
+      <a href="MyProfile.html">My Profile</a>
+      <a href="#">Log out</a>
+    </div>
+  </nav>
+
+  <section id="showcase" class="text">
+  <img src="Assets/New-Car-Sales-Hero.webp" alt="Car Image" class="background-car">
+  <div class="catchy-text">
+    <h1>Welcome Back!</h1>
+    <h3>Start your journey with a fast, easy car rental reservation—just a few clicks and you're on the road. Reliable vehicles, instant booking, zero hassle.</h3>
+  </div>
+</section>
+
+ <div class="carousel-container">
+  <div class="carousel" id="carousel">
+
+    <div class="carousel-item">
+      <img class="vehicle-image" src="suv/veloz-removebg-preview (1).png" alt="Toyota Veloz">
+      <div class="vehicle-details">
+        <h2>Toyota Veloz</h2>
+        <p>7-seater subcompact crossover SUV, bolder front fascia, advanced safety features, premium interior.</p>
+        <p class="price">₱1,000/day</p>
+        <a href="reserve.html?car=veloz" class="reserve-btn">Reserve Now</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="vehicle-image" src="sedan/sedanPic.png" alt="Toyota Vios">
+      <div class="vehicle-details">
+        <h2>Toyota Vios Sedan 2019</h2>
+        <p>Seats five, good trunk space, ideal for couples, small families, or light travel groups.</p>
+        <p class="price">₱1,200/day</p>
+        <a href="reserve.html?car=vios" class="reserve-btn">Reserve Now</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="vehicle-image" src="van/urvan-removebg-preview (1).png" alt="Nissan Urvan">
+      <div class="vehicle-details">
+        <h2>Nissan NV350 Urvan</h2>
+        <p>Great for family or business trips. Can seat 10 to 18 people, depending on the model.</p>
+        <p class="price">₱3,000/day</p>
+        <a href="reserve.html?car=urvan-3000" class="reserve-btn">Reserve Now</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img class="vehicle-image" src="van/urvan-removebg-preview (1).png" alt="Nissan Urvan">
+      <div class="vehicle-details">
+        <h2>Nissan NV350 Urvan</h2>
+        <p>Ideal for groups or logistics. Comfortable and spacious for long rides.</p>
+        <p class="price">₱2,000/day</p>
+        <a href="reserve.html?car=urvan-2000" class="reserve-btn">Reserve Now</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 DriveClick. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="BusinessOv.html">Privacy Policy</a>
+        <a href="https://www.facebook.com/profile.php?id=100049838862139">Facebook</a>
+        <a href="ContactUs.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
