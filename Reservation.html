@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Reservation Form</title>
+  <link rel="stylesheet" href="reservation.css" />
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-brand">DriveClick</div>
+   <div class="navbar-links">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Rent.html">Rent a Car</a>
+    <a href="Dashboard.html">Dashboard</a>
+   </div>
+  <div class="navbar-buttons">
+    <button class="nav-btn">Log out</button>
+  </div>
+</div>
+  <div class="container">
+    <h1>🚗 Car Reservation Form</h1>
+    <p>Please fill out the form below to reserve your vehicle.</p>
+
+    <form action="confirmation.html" method="post" enctype="multipart/form-data">
+      
+      <fieldset>
+        <legend>Client Details</legend>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Contact Address</legend>
+        <input type="text" placeholder="Street Address" required>
+        <input type="text" placeholder="City" required>
+        <input type="text" placeholder="State / Province" required>
+        <input type="text" placeholder="ZIP / Postal Code" required>
+        <input type="text" placeholder="Country" required>
+      </fieldset>
+
+     
+      <fieldset>
+        <legend>Vehicle Selection</legend>
+        <label><input type="checkbox" name="vehicle" value="Sedan"> Sedan</label>
+        <label><input type="checkbox" name="vehicle" value="SUV"> SUV</label>
+        <label><input type="checkbox" name="vehicle" value="Trucks"> Trucks</label>
+        <label><input type="checkbox" name="vehicle" value="Vans"> Vans</label>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Reservation Timing</legend>
+        <input type="date" placeholder="Start Date" required>
+        <input type="text" placeholder="Pickup Location" required>
+        <input type="text" placeholder="Return Location" required>
+      </fieldset>
+
+     
+      <fieldset>
+        <legend>Documentation</legend>
+        <label>Upload Driver's License (ID Picture):</label>
+        <input type="file" name="license" accept="image/*,.pdf" required>
+        <label>Upload Proof of Address:</label>
+        <input type="file" name="addressProof" accept="image/*,.pdf" required>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Payment Information</legend>
+        <label><input type="radio" name="payment" value="Credit Card" required> Credit Card</label>
+        <label><input type="radio" name="payment" value="GCash"> GCash</label>
+        <label><input type="radio" name="payment" value="Bank Transfer"> Bank Transfer</label>
+      </fieldset>
+
+      
+      <fieldset>
+        <legend>Additional Notes</legend>
+        <textarea placeholder="Notes or special requests..."></textarea>
+      </fieldset>
+
+      
+      <div class="form-actions">
+  <label>
+    <input type="checkbox" required>
+    I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+  </label>
+  <a href="Confirmed.html" class="submit-button">Submit Reservation</a>
+</div>
+
+    </form>
+  </div>
+</body>
+</html>

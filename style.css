@@ -432,7 +432,7 @@ filter: blur(5px 5px 10px rgba (0,0,0,0.2));
       text-decoration: underline;
     }
 
-    .footer {
+.footer {
   background-color: #0f172a;
   color: #fff;
   padding: 2rem;
