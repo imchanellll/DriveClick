@@ -47,6 +47,20 @@ body {
   gap: 10px;
 }
 
+.nav-btn {
+  background-color: #ffffff;
+  color: black;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #dcdcdc;
+}
 
 .slide {
   display: flex;
